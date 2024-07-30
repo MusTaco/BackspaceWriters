@@ -487,7 +487,8 @@ footer .container {
         text-align: center;
     }
     .about p {
-        margin: 0 2em;
+        margin: 0 auto;
+        width: 90%;
     }
     
 }
