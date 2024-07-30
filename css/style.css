@@ -43,9 +43,7 @@ a {
 }
 
 .wrapper {
-    /* background-color: red; */
     display: flex;
-    /* justify-self: center; */
     flex-wrap: wrap;
     justify-content: space-between;
     width: 70%;
@@ -53,7 +51,6 @@ a {
 }
 
 .header .container {
-    /* border-bottom: 1px solid #008000; */
     padding-bottom: 1em;
     
 }
@@ -81,7 +78,6 @@ a {
     align-items: center;
     padding-top: 10em;
     padding-bottom: 5em;
-    /* background-color: #f4f6ff; */
     max-width: 80%;
     margin: auto;
 }
@@ -96,7 +92,6 @@ a {
 .hero-section a {
     color: #cb054d;
     border: 1px solid #857878;
-    /* background-color: #8d478d; */
     margin-top: 2em;
     padding: 0.8em 1em;
     border-radius: 2px;
@@ -111,7 +106,6 @@ a {
 }
 
 .about .container{
-    /* background-color: rgb(202 255 204); */
     padding: 8em 0;
     display: flex;
     align-items: center;
@@ -125,15 +119,12 @@ a {
     justify-content: space-evenly;
     margin: auto;
     align-items: center;
-    /* background-color: green; */
 }
 
 
 .about img {
     border-radius: 10px;
-    /* width: 100%; */
     max-width: 350px;
-    /* margin-left: 1em; */
 }
 
 .column-heading {
@@ -141,7 +132,6 @@ a {
 }
 
 .about-sec, img {
-    /* width: 50%; */
     flex:1;
 }
 
@@ -161,9 +151,6 @@ a {
     color: white;
 }
 
-.services {
-    /* background-color: aliceblue; */
-}
 
 .services .container {
     padding: 1em;
@@ -526,6 +513,9 @@ footer .container {
     .about .container{
         /* background-color: rgb(202 255 204); */
         width: 100%;
+    }
+    .about p {
+        margin: 0 2em;
     }
     .section-image {
         margin-left: 0;
