@@ -388,12 +388,20 @@ footer .container {
     line-height: 2em;
 }
 
+.article-section p {
+    line-height: 1.2em;
+}
+
 .article-section h4 {
     font-weight: 400;
 }
 
-.article-section ul {
+.article-section ul, .article-section ol {
     margin-left: 2em;
+}
+
+.bold-list li{
+    font-weight: bold;
 }
 
 .section-heading {
