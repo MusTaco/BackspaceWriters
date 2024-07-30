@@ -486,6 +486,9 @@ footer .container {
         margin-bottom: 1em;
         text-align: center;
     }
+    .about p {
+        margin: 0 2em;
+    }
     
 }
 
@@ -513,9 +516,6 @@ footer .container {
     .about .container{
         /* background-color: rgb(202 255 204); */
         width: 100%;
-    }
-    .about p {
-        margin: 0 2em;
     }
     .section-image {
         margin-left: 0;
