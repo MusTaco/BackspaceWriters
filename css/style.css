@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+    font-family: degular;
+    src: url(../fonts/degular.otf);
+}
+
+h1, h2, h3 {
+    font-weight: 550;
+    font-family: degular;
+}
+h1 {
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.header {
+    padding-top: 2em;
+    
+}
+
+.header a {
+    color: black;
+}
+
+
+.logo {
+    border-right: 1px solid black;
+    padding-right: 1em;
+
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.wrapper {
+    /* background-color: red; */
+    display: flex;
+    /* justify-self: center; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.header .container {
+    /* border-bottom: 1px solid #008000; */
+    padding-bottom: 1em;
+    
+}
+
+.header .container, .header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.menu ul a {
+    color: #5f5959;
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0 1em;
+}
+
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10em;
+    padding-bottom: 5em;
+    /* background-color: #f4f6ff; */
+    max-width: 80%;
+    margin: auto;
+}
+
+.hero-section h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.hero-section a {
+    color: #cb054d;
+    border: 1px solid #857878;
+    /* background-color: #8d478d; */
+    margin-top: 2em;
+    padding: 0.8em 1em;
+    border-radius: 2px;
+}
+
+.line-break{
+    display: block;
+}
+
+.call-to-action {
+    font-size: 1.3em;
+}
+
+.about .container{
+    /* background-color: rgb(202 255 204); */
+    padding: 8em 0;
+    display: flex;
+    align-items: center;
+    color: rgb(56, 49, 49);
+    justify-content: space-between;
+}
+
+.about .wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+    /* background-color: green; */
+}
+
+
+.about img {
+    border-radius: 10px;
+    /* width: 100%; */
+    max-width: 350px;
+    /* margin-left: 1em; */
+}
+
+.column-heading {
+    margin-bottom: 0.75em;
+}
+
+.about-sec, img {
+    /* width: 50%; */
+    flex:1;
+}
+
+.about p {
+    max-width: auto;
+    color: #8d7e7e;
+    margin-right: 0.5em;
+
+}
+
+.learn-more {
+    margin-top: 1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    background-color: rgb(101 183 110);
+    border-radius: 10px;
+    color: white;
+}
+
+.services {
+    /* background-color: aliceblue; */
+}
+
+.services .container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.services .wrapper {
+    /* background-color: red; */
+    display: flex;
+    /* justify-self: center; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.service {
+    text-align: center;
+    line-height: 2em;
+    margin-top: 1em;
+}
+
+.desc {
+    font-size: 0.75em;
+    width: 250px;
+    line-height: 1.6em;
+    color: #8d7e7e;
+}
+
+.service img {
+    max-width: 100px;
+}
+
+.more-btn {
+    margin: 3em 0;
+}
+
+.more {
+    
+    border-bottom: 1px solid #6e7589;
+    color: #6e7589;
+}
+
+.blogs .container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.blogs .wrapper {
+    width: 80%;
+    
+}
+
+.blog {
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+
+.blogs .column-heading{
+    margin: 3em 0;
+}
+
+.blog img {
+    border-radius: 2px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.blog h3 {
+    font-size: 100%;
+}
+
+.blog p {
+    display: none;
+    line-height: 1.5em;
+    color: #473232;
+    font-size: 0.75em;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 5em;
+}
+
+footer .container {
+    background-color: #dddddd;
+    color: #292929;
+    padding: 2em 0;
+
+}
+
+.social-media {
+    padding: 2em 0;
+    width: 20%;
+    margin: auto;
+    border-bottom: 2px solid gray;
+}
+
+.icon {
+    color: #292929;
+    font-size: 1.5em;
+}
+
+.middle {
+    margin: 0 1em;
+}
+
+.copy-right {
+    margin-top: 2em;
+}
+
+.about-page {
+    margin: 10em 0;  
+}
+
+.width-60 {
+    width: 60%;
+    margin: auto;
+}
+
+.width-60 p {
+    color: #756c6c;
+}
+
+.make-bold {
+    display: block;
+    font-weight: 700;
+}
+@media screen and (max-width: 1400px) {
+    .services .wrapper, .about .wrapper, .wrapper, .blogs .wrapper{
+        width: 100%;
+    }
+    footer .container {
+        width: 100%;
+    }
+    .width-60 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .hero-section {
+        font-size: 0.75em;
+    }
+    .about .wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    
+    .about img {
+        margin-bottom: 2em;
+    }
+    
+    .column-heading {
+        margin-bottom: 0.75em;
+    }
+    
+    .about-sec, img {
+        /* width: 50%; */
+        flex:auto;
+        margin-left: 0;
+    }
+    
+    .about p {
+        max-width: 450px;   
+    }
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .width-60 {
+        text-align: center;
+        width: 90%;
+    }
+}
+
+.blog-template {
+    margin: 3em 0;
+}
+
+.blog-template h1 {
+    margin-bottom: 1em;
+}
+
+.light {
+    color: #7f7a7a;
+}
+
+.author {
+    font-weight: 700;
+    color: black;
+}
+
+
+
+.main-image img {
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 3em 0;
+}
+
+.article-section {
+    max-width: 800px;
+    font-size: 1.2em;
+}
+
+.more-space {
+    margin-top: 7em;
+}
+
+.less-space {
+    margin-top: 2em;
+}
+
+.section-image {
+    width: 50%;
+    min-width: 300px;
+    margin: 1em 0;
+    margin-left: 2em;
+}
+
+.article-section .list {
+    margin-top: 1em;
+    line-height: 2em;
+}
+
+.article-section h4 {
+    font-weight: 400;
+}
+
+.article-section ul {
+    margin-left: 2em;
+}
+
+.section-heading {
+    font-weight:900;
+    margin-bottom: 0.75em;
+}
+
+.about-author {
+    margin: 20em 0;
+}
+
+.about-author .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    background-color: #1f2937;
+    color: white;
+}
+
+.avatar img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.author-info {
+    max-width: 600px;
+}
+
+.intro {
+    margin-top: 5em;
+}
+
+@media screen and (max-width: 1050px) {
+    .about-author .container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .logo {
+        border-right: none;
+        padding-right: 1em;
+        width: 100%;
+    
+    }
+    .call-to-action {
+        display: none;
+    }
+
+    
+    .header .container, .header .menu {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+        /* background-color: gray; */
+        width: 100%;
+    }
+    .menu {
+        width: 80%;
+        margin: auto;
+    }
+    .hamburger-icon, .logo h1 {
+        display: block;
+        font-size: 2em;
+    }
+
+    .menu ul {
+        flex: 1 1 100%;
+        display: none;
+    }
+   
+    
+    .menu ul a {
+        color: #5f5959;
+        display: block;
+        margin-left: 0;
+        padding: 0;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 645px) {
+    
+    .social-media {
+        width: 50%;
+    }
+    .hamburger-icon, .logo h1 {
+        display: block;
+        font-size: 1.75em;
+    }
+    .header .container {
+        width: 100%;
+    }
+    .hero-section .container {
+        padding: 0;
+    }
+    .article-section {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .about .container{
+        /* background-color: rgb(202 255 204); */
+        width: 100%;
+    }
+    .section-image {
+        margin-left: 0;
+    }
+    .main-image img {
+        width: 100%;
+    }
+    
+}
