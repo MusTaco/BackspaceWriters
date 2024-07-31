@@ -205,13 +205,14 @@ a {
 
 .blogs .wrapper {
     width: 80%;
+    gap: 10px;
     
 }
 
 .blog {
     text-align: center;
     line-height: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 .blogs .column-heading{
@@ -222,6 +223,7 @@ a {
     border-radius: 2px;
     width: 100%;
     max-width: 300px;
+    height: 200px;
 }
 
 .blog h3 {
