@@ -33,7 +33,6 @@ Welcome to our portfolio website, crafted with the magic of HTML, CSS, JavaScrip
 ![Front page](https://github.com/user-attachments/assets/383f4bb3-f1d9-4e73-a22e-0e362d107859)
 
 #  About us and servies we are offering: 
-![about us](https://github.com/user-attachments/assets/050822e1-46c3-468a-8e99-6ecc6c2c05be)
 
 
 # Blogs Category:
