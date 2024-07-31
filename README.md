@@ -28,3 +28,7 @@ Welcome to our portfolio website, crafted with the magic of HTML, CSS, JavaScrip
 # Contributors
 1. **Mustafa Babar**: Backend development, database management, writer.
 2. **Muhammad Jawad**: Frontend development, design, writer.
+
+
+# Our Homepage
+![Blogs](https://github.com/user-attachments/assets/cbfd6d8f-db96-40f8-a492-1f2ab1a2c611)
