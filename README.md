@@ -26,7 +26,7 @@ Welcome to our portfolio website, crafted with the magic of HTML, CSS, JavaScrip
 - JavaScript
 
 # Contributors
-1. **Mustafa Babar (Mustaco) **: Backend development, database management, writer.
+1. **Mustafa Babar (Mustaco)**: Backend development, database management, writer.
 2. **Muhammad Jawad (Alpha)**: Frontend development, design, writer.
 
 # Our Homepage:
