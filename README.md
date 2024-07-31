@@ -21,7 +21,7 @@ Benefits: A responsive design ensures that all users, regardless of their device
 - HTML
 - CSS
 - JavaScript
-- 
+
 # Contributors
 1. Mustafa Babar: Backend development, database management, writer.
 2. Muhammad Jawad: Frontend development, design, writer.
