@@ -289,6 +289,10 @@ footer .container {
     display: block;
     font-weight: 700;
 }
+
+.blog-template h1 {
+    text-transform: capitalize;
+}
 @media screen and (max-width: 1400px) {
     .services .wrapper, .about .wrapper, .wrapper, .blogs .wrapper{
         width: 100%;
