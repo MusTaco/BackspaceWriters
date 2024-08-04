@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backspace Writers</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="logo">
+                    <a href="../../index.html"><h1>BACKSPACE WRITERS</h1></a>
+                    <a href="#" class="hamburger-icon" onclick="showMenu()" id="show-menu"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                </div>
+                <ul id="main-menu">
+                    <a href="../about-us.html">
+                        <li>About</li>
+                    </a>
+                    <a href="../blog.html">
+                        <li>Blogs</li>
+                    </a>
+                    <a href="../about-us.html#contact-us">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <a href="#" class="call-to-action">Click Me!</a>
+        </div>
+    </header>
+
+    <section class="blog-template">
+        <div class="container">
+            <h1>rock, paper, scissors assignment - the odin project</h1>
+            <article class="my-blog">
+
+                <div class="article-info">
+                    <h3><a href="#about-author" class="author">Muhammad Mustafa Babar</a></h3>
+                    <time datetime="2024-08-04" class="light">4 Aug, 2024</time>
+                </div>
+
+                <figure class="main-image">
+                    <img src="https://img.freepik.com/free-vector/hands-fist-victory-symbol_107791-8324.jpg?ga=GA1.1.2096530021.1721235464&semt=ais_hybrid" alt="Crypto Currency">
+                </figure>
+
+                <div class="article-section intro">
+                    <p class="section-para">
+                        Rock, Paper, Scissors is a common beginners project. Here we would complete the project as assigned in `The Odin Project`.
+                    </p>
+                </div>
+
+                <div class="article-section more-space">
+                    <h3 class="section-heading">Get Computer Choice</h3>
+                    <p class="section-para">
+                        First, we create a function to get the computer's choice. I used the Math.random function to generate a random value. Math.random returns a value greater than or equal to 0 but less than 1.
+
+                    </p>
+
+                    <p class="section-para less-space">
+                        If the function returns a value less than or equal to 0.3, it will return “rock.” If the numerical value is greater than 0.3 but less than or equal to 0.6, it will return “paper.” If the value is greater than 0.6, it will return “scissors.”
+                    </p>
+
+                    <pre class="less-space">
+                        <code>
+    function getComputerChoice() {
+        num = Math.random()
+    
+        if (num <=0.3) {
+            return 'rock'
+        }
+        else if (num<=0.6) {
+            return 'paper'
+        }
+        else {
+            return 'scissors'
+        }
+    }
+</code>
+                    </pre>
+                </div>
+
+                <div class="article-section more-space">
+                    <h3 class="section-heading">Get Human Choice</h3>
+                    <p class="section-para">
+                        Next, we ask for the user's input. The user will be prompted to enter their choice, and for this, I used the JavaScript function prompt(). The user's choice is then stored in a variable.
+
+                    </p>
+
+                    <p class="section-para less-space">
+                        Using prompt(), we can display a dialog box that asks the user to enter either "rock", "paper", or "scissors". The returned value is converted to lowercase using the JavaScript function toLowerCase() to ensure consistent casing.
+                    </p>
+
+                    <pre class="less-space">
+                        <code>
+    function getHumanChoice() {
+        choice = prompt('Your choice(rock,paper,scissors)?').toLowerCase()
+        return choice
+    }
+</code>
+                    </pre>
+                </div>
+
+                <div class="article-section more-space">
+                    <h3 class="section-heading">Play Round Function and Declare Score Variables</h3>
+                    <p class="section-para">
+                        Before creating the function to play a round, we need to declare two variables: `humanScore` and `computerScore`, and set them equal to 0. These variables will keep track of the score and will be updated after each round.
+
+                    </p>
+
+                    <pre class="less-space">
+                        <code>
+                            
+    let humanScore = 0;
+    let computerScore = 0;
+                        </code>
+                    </pre>
+
+                    <p class="section-para less-space">
+                        Next, we create a function called `playRound`. This function will take two parameters: `humanChoice` and `computerChoice`. It will determine the winner for the round and increment either the `humanScore` or `computerScore` variables depending on who wins. If it’s a tie, the scores remain unchanged.
+                    </p>
+
+                    <pre class="less-space">
+                        <code>
+    function playRound(humanChoice, computerChoice) {
+        console.log(`Computer chose ${computerChoice} while you chose ${humanChoice}`)
+        if (
+            (humanChoice === 'rock' && computerChoice === 'scissors') || 
+            (humanChoice === 'scissors' && computerChoice === 'paper') || 
+            (humanChoice === 'paper' && computerChoice === 'rock')
+        ) {
+    
+            console.log(`You win! ${humanChoice} beats ${computerChoice}`)
+            humanScore = humanScore + 1
+    
+        }
+        else if (humanChoice === computerChoice) {
+    
+            console.log(`It's a tie! Both chose ${humanChoice}`)
+    
+        }
+        else {
+    
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
+            computerScore = computerScore + 1
+    
+        }
+    }
+</code>
+                    </pre>
+
+                    <div class="list">
+                        <h3>In this function:</h3>
+                        <ul>
+                            <li>We log the choices made by the computer and the human.</li>
+                            <li>We check if the human wins using a series of conditions.</li>
+                            <li>If the human wins, we increment `humanScore` and log the win.</li>
+                            <li>If it’s a tie, we log the tie without changing the scores.</li>
+                            <li>If the computer wins, we increment `computerScore` and log the loss.</li>
+                        </ul>
+                    </div>
+
+                    <p class="less-space">
+                        By keeping track of the scores and updating them accordingly, we can maintain a running tally of who is winning as the game progresses.
+                    </p>
+                </div>
+
+                <div class="article-section more-space">
+                    <h3 class="section-heading">play game and declare winner</h3>
+
+                    <p class="section-para">
+                        Lastly, we will create two more functions: `playGame` and `declareWinner`. We will also introduce a new variable `round` and set it to 0. 
+                    </p>
+
+                    <p class="section-para less-space">
+                        The `playGame` function will call the `playRound` function five times and keep track of the score. After five rounds, it will call the `declareWinner` function to determine and output the winner based on who has the highest score. If fewer than five rounds have been played, it will call itself recursively and increment the `round` variable by 1.
+                    </p>
+
+                    <pre class="less-space">
+                        <code>
+    function declareWinner() {
+        if (humanScore > computerScore) {
+            console.log(`You win!`)
+        } 
+        else if (computerScore > humanScore) {
+            console.log(`Computer wins!`)
+        }
+    }
+    
+    function playGame() {
+        humanChoice = getHumanChoice()
+        computerChoice = getComputerChoice()
+    
+        playRound(humanChoice, computerChoice)
+        console.log(`Your score: ${humanScore}`)
+        console.log(`Computer score: ${computerScore}`)
+    
+        if (round >= 5) {
+            declareWinner()
+        }
+        else {
+            round = round + 1
+            console.log(`Round Number: ${round}`)
+            playGame()
+            
+        }
+    }
+                            
+                        </code>
+                    </pre>
+
+                    <h3 class="make-bold less-space">Explanation</h3>
+
+                    <div class="list less-space">
+                        <h3 class="make-bold">1. playGame Function</h3>
+                        <ul>
+                            <li>This function checks if fewer than five rounds have been played.</li>
+                            <li>If so, it calls `getHumanChoice` and `getComputerChoice` to get the choices for the round.</li>
+                            <li>It then calls `playRound` to play the round and increments the `round` variable by 1.</li>
+                            <li>The function calls itself recursively to continue the game until five rounds have been played.</li>
+                            <li>Once five rounds have been played, it calls the `declareWinner` function.</li>
+                        </ul>
+                    </div>
+
+                    <div class="list less-space">
+                        <h3 class="make-bold">1. declareWinner Function</h3>
+                        <ul>
+                            <li>This function outputs the final scores.</li>
+                            <li>It compares `humanScore` and `computerScore` to determine the winner.</li>
+                            <li>It logs a message declaring the winner or indicating a tie.</li>
+
+                        </ul>
+                    </div>
+
+                   
+                </div>
+
+                <div class="article-section more-space">
+                    <h3 class="section-heading">Complete Game Flow</h3>
+
+                    <div class="list">
+                        <ol>
+                            <li>Get Computer Choice: Generates a random choice for the computer.</li>
+
+
+                            <li>Get Human Choice: Prompts the user to enter their choice.</li>
+    
+                            <li>Play Round: Plays a single round and updates the scores.</li>
+
+                            <li>Play Game: Manages the game flow, playing five rounds in total.</li>
+
+                            <li>Declare Winner: Declares the winner based on the final scores.</li>
+ 
+                        </ol>
+                    </div>
+
+                    <p class="section-para less-space">By following this structure, we can ensure a smooth and interactive game experience. Here's the complete code:</p>
+
+                    <pre class="less-space">
+                        <code>
+
+    function getComputerChoice() {
+        num = Math.random()
+
+        if (num <=0.3) {
+            return 'rock'
+        }
+        else if (num<=0.6) {
+            return 'paper'
+        }
+        else {
+            return 'scissors'
+        }
+    }
+
+    function getHumanChoice() {
+        choice = prompt('Your choice(rock,paper,scissors)?').toLowerCase()
+        return choice
+    }
+
+
+    let humanScore = 0
+    let computerScore = 0
+    let round = 1
+
+    function playRound(humanChoice, computerChoice) {
+        console.log(`Computer chose ${computerChoice} while you chose ${humanChoice}`)
+        if (
+            (humanChoice === 'rock' && computerChoice === 'scissors') || 
+            (humanChoice === 'scissors' && computerChoice === 'paper') || 
+            (humanChoice === 'paper' && computerChoice === 'rock')
+        ) {
+
+            console.log(`You win! ${humanChoice} beats ${computerChoice}`)
+            humanScore = humanScore + 1
+
+        }
+        else if (humanChoice === computerChoice) {
+
+            console.log(`It's a tie! Both chose ${humanChoice}`)
+
+        }
+        else {
+
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
+            computerScore = computerScore + 1
+
+        }
+    }
+
+    function declareWinner() {
+        if (humanScore > computerScore) {
+            console.log(`You win!`)
+        } 
+        else if (computerScore > humanScore) {
+            console.log(`Computer wins!`)
+        }
+    }
+
+    function playGame() {
+        humanChoice = getHumanChoice()
+        computerChoice = getComputerChoice()
+
+        playRound(humanChoice, computerChoice)
+        console.log(`Your score: ${humanScore}`)
+        console.log(`Computer score: ${computerScore}`)
+
+        if (round >= 5) {
+            declareWinner()
+        }
+        else {
+            round = round + 1
+            console.log(`Round Number: ${round}`)
+            playGame()
+            
+        }
+    }
+
+    playGame()
+
+
+                        </code>
+                    </pre>
+                </div>
+
+             
+                
+
+
+               
+
+            </article>
+        </div>
+        
+    </section>
+
+   
+    <section class="about-author" id="about-author">
+        <div class="container">
+            <figure class="avatar">
+                <img src="../../images/avatar.jpg" alt="Avatar">
+            </figure>
+            <div class="author-info">
+                <h2 class="column-heading">Muhammad Mustafa Babar</h2>
+                <p class="info">
+                    Apart from writing code and curating blog posts, Mustafa enjoys going to the gym and practicing strength training. He also plays basketball as a hobby and has a keen interest in watching MMA.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon middle"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="copy-right">
+                <p><i class="fa-regular fa-copyright"></i> Backspace Writers 2024-Present</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
