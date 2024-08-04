@@ -290,7 +290,7 @@ footer .container {
     font-weight: 700;
 }
 
-.blog-template h1 {
+.blog-template h1, .blog-template h2, .blog-template h3 {
     text-transform: capitalize;
 }
 @media screen and (max-width: 1400px) {
