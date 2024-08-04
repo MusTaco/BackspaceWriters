@@ -257,6 +257,7 @@ footer .container {
     width: 20%;
     margin: auto;
     border-bottom: 2px solid gray;
+    display: none;
 }
 
 .icon {
