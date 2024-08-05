@@ -13,5 +13,6 @@ function showMenu() {
 function linkClickMe() {
     elem = document.getElementsByClassName('call-to-action')[0]
     elem.href = '/pages/about-us.html'
+    elem.innerText = 'Our Team'
 }
 linkClickMe()
