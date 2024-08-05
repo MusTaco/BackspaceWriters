@@ -8,3 +8,10 @@ function showMenu() {
         elem.style.display = "block";
     }
 }
+
+
+function linkClickMe() {
+    elem = document.getElementsByClassName('call-to-action')[0]
+    elem.href = '/pages/about-us.html'
+}
+linkClickMe()
